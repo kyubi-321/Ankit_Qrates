@@ -1,0 +1,646 @@
+:root {
+    --yellow: #FFF804;
+    --gray:#81836C;
+    --purple: #E280FF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav {
+    display: flex;
+    width: 170px;
+    justify-content: space-around;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section h1 {
+    padding: 20px;
+    align-self: flex-start;
+}
+
+.hero-section-first-p {
+    padding: 0 20px;
+}
+
+.section-tag {
+    padding: 5px;
+    border: 2px solid;
+    width: 175px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px auto;
+    background: #fff;
+    color: #000;
+}
+
+.no-risk-section {
+    border-top: 3px solid;
+    text-align: center;
+}
+
+.crowdfunding-div {
+    background: var(--yellow);
+    padding: 0 0 40px 0;
+}
+
+.crowdfunding-div p {
+    padding: 20px 0;
+}
+
+.press-sell-div {
+    background: var(--gray);
+    padding: 40px;
+}
+
+.press-sell-div p {
+    padding: 20px 0;
+}
+
+.desktop-nav-mid {
+    display: none;
+}
+
+.desktop-nav-right {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.try-btn {
+    background: var(--yellow);
+    color: #000;
+    border: none;
+    margin: 50px 0 0;
+}
+
+.vinyl-studio {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.imgs-animation-div {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-lists-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    padding: 50px 0;
+}
+
+.icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 50px;
+}
+
+.icons-row li:nth-of-type(2) {
+    margin: 0 30px;
+}
+
+.terms-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 25px 0;
+}
+
+.col-2 {
+    grid-column: 2;
+}
+
+.mobile-none {
+    display: none;
+}
+
+.desktop-none {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.crowdfunding-img {
+    width: 275px;
+    height: 275px;
+    margin: 25px 50px;
+}
+
+.black-bg {
+    background: #000;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.black-bg p {
+    padding: 25px;
+}
+
+.purple {
+    background: var(--purple);
+    padding: 20px;
+}
+
+.purple h1 {
+    padding: 20px 20px 0 20px;
+}
+
+.purple p {
+    padding: 50px 20px;
+}
+
+.purple img {
+    border: 2px solid;
+    height: auto;
+}
+
+.testimonial {
+    background:#FF6711;
+    padding: 0 0 25px 0;
+}
+
+#testimonial-img {
+    width: 335px;
+    margin: 20px;
+    border: 2px solid;
+}
+
+.button-div {
+    margin: 20px;
+}
+
+.quote-div {
+    margin: 20px;
+}
+
+#artist {
+    margin: 20px;
+}
+
+.circle-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: inherit;
+    color: #000;
+}
+
+.circle-active {
+    color: #fff;
+    background: #000;
+    border: none;
+}
+
+.on-qrates {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.instagram-fetched {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.instagram-fetched img {
+    width: 187.5px;
+    height: 187.5px;
+}
+
+.open {
+    display: flex;
+}
+
+.content {
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.open .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.faq-title {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.man-bring-records {
+    width: 250px;
+    transform: rotate(5deg);
+    margin: 50px -5px 50px 115px;
+    border: 2px solid;
+}
+
+.artist-waves {
+    width: 250px;
+    transform: rotate(-5deg);
+    margin: -110px 0 100px 0;
+    border: 2px solid;
+    position: relative;
+}
+
+.paid-to-artists {
+    width: 80px;
+    position: absolute;
+    bottom: -215px;
+    right: 20px;
+}
+
+.logo-ad {
+    height: 50px;
+    margin: 10px 20px;
+}
+
+.why-qrates {
+    padding: 5px;
+    border: 2px solid;
+    width: 125px;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: flex-start;
+    margin: 50px 20px;
+}
+
+.find-your-fit {
+    padding: 0px 40px;
+}
+
+.find-your-fit p {
+    margin: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.press-only-section {
+    background: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.press-only-section div {
+    padding: 20px 0 0;
+    text-decoration: underline;
+}
+
+.our-services-section p {
+    padding: 20px;
+}
+
+.services-img {
+    width: 200px;
+    margin: 25px auto;
+    border: 2px solid;
+    transform: rotate(-5deg);
+}
+
+.faq-border {
+    border: 1px solid;
+}
+
+.artists-on-qrates-tag {
+    margin: 20px;
+}
+
+.community-section {
+    padding: 25px 0;
+}
+
+.community-section p {
+    padding: 20px;
+}
+
+.marquee {
+	background-color: #fff;
+	color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee div {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+.marquee div span {
+    padding-left: 15px
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.artist {
+    text-decoration: underline;
+}
+
+.highlight1 {
+    animation: flash linear 4s infinite;
+    width: 50px;
+    align-self: baseline;
+}
+
+#imgs-animation-img {
+    width: 250px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.highlight2 {
+    animation: flash linear 4s infinite;
+    width: 50px;
+    align-self: flex-end;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: .1; }
+    100% { opacity: 1; }
+}
+
+.hero-text-wrapper {
+    margin: 0;
+}
+
+.press-sell-img {
+    height: auto;
+    width: auto;
+}
+
+@media(min-width: 1000px) {
+
+    button {
+        width: 25%;
+    }
+
+    .mobile-none {
+        display: block;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    .make-a-record {
+        background: #000;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: #fff;
+        margin: 0 20px;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-text-wrapper {
+        margin-bottom: 1800px;
+    }
+
+    .man-bring-records {
+        width: 675px;
+        margin: 100px 0 -450px 0;
+    }
+
+    .artist-waves {
+        width: 675px;
+        margin: 400px 0 100px -600px;
+    }
+
+    .paid-to-artists {
+        width: 275px;
+        position: absolute;
+        bottom: -700px;
+        right: 125px;
+    }
+
+    .no-matter-section {
+        border: 1px solid;
+        margin-top: -150px;
+        padding: 50px;
+    }
+
+    .press-sell-div p {
+        padding: 25px 0 15px;
+        max-width: 52ch;
+        margin: 0 auto;
+    }
+
+    .get-into-it {
+        margin: 33px auto 25px;
+    }
+
+    .press-sell-img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .crowdfunding-img {
+        width: 500px;
+        height: 400px;
+        margin: 25px 50px;
+    }
+
+    .our-services-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 25px 0;
+    }
+
+    .black-purple-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .purple img {
+        height: 350px;
+    }
+
+    .instagram-fetched {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .instagram-fetched img {
+        height: 450px;
+        width: 100%;
+    }
+
+    .discover-nav-discover {
+        height: 900px !important;
+        grid-row: 1 / 3;
+    }
+
+    .testimonial {
+        padding: 25px 0;
+    }
+
+    .testimonial-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #testimonial-img {
+        width: 100%;
+        height: 100%;
+        margin: -97px auto -31px auto;
+        border: 2px solid;
+    }
+
+    #imgs-animation-img {
+        width: auto;
+    }
+
+    .black-bg img {
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    .purple h1 {
+        padding: 0;
+    }
+
+    .purple p {
+        padding: 20px;
+    }
+
+    .desktop-nav-mid {
+        display: flex;
+    }
+
+    .desktop-nav-mid li:nth-of-type(2) {
+        margin: 0 20px;
+    }
+
+    .desktop-nav-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .footer-bottom-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .icons-row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+    }
+
+    .terms-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .terms-row li {
+        margin-right: 20px;
+    }
+
+    .footer-lists-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .no-risk-section {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .man-bring-records {
+        width: auto;
+        margin: -100px 0 -550px 0;
+    }
+
+    .artist-waves {
+        width: auto;
+        margin: 300px 0 100px -600px;
+    }
+
+    .paid-to-artists {
+        bottom: -900px;
+    }
+}
+
+@media (max-height: 700px){
+  .paid-to-artists {
+    bottom: -1000px;
+  }
+}
